@@ -9,7 +9,7 @@
 [![CI/CD](https://img.shields.io/badge/CI%2FCD-GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)](https://github.com/herdofpane/Portfolio/actions)
 
 <p align="center">
-  Site portfolio professionnel, moderne et ultra-performant pour <strong>Bradley Djedje</strong>, Chef de Projets Informatique & Développeur Full-Stack, en alternance chez <strong>Semware</strong> et étudiant en <strong>Master MIASHS ICE-LD</strong> (Université de Toulouse).
+  Site portfolio professionnel, moderne et ultra-performant pour <strong>Bradley Djedje</strong>, Développeur Full-Stack, en alternance chez <strong>Semware</strong> et étudiant en <strong>Master MIASHS ICE-LD</strong> (Université de Toulouse).
 </p>
 
 [**🌐 Consulter la Démo en Ligne**](https://herdofpane.github.io/Portfolio/) • [**💼 Profil LinkedIn**](https://linkedin.com/in/bradley-djedje) • [**🐙 GitHub**](https://github.com/herdofpane)
@@ -41,12 +41,12 @@
   - Console de code interactive simulant l'exécution d'un profil développeur.
   - Indicateurs et statistiques clés (années d'expérience, projets menés, certifications).
   - Action rapide de copie de l'adresse email dans le presse-papier avec feedback visuel instantané.
-- **À Propos & Vision Métier** : Synthèse de la double compétence technique et gestion de projet (Alternance chez Semware, Master MIASHS ICE-LD, BUT Informatique).
+- **À Propos & Parcours** : Présentation du profil Développeur Full-Stack, associant rigueur d'ingénierie logicielle et compréhension des enjeux métiers (Alternance chez Semware, Master MIASHS ICE-LD, BUT Informatique).
 - **Matrice de Compétences 360°** : Organisée en 4 piliers majeurs :
   1. *Full-Stack Development* (Python, Django, Angular, TypeScript, Spring Boot, PHP).
   2. *Data & Databases* (PostgreSQL, MySQL, MongoDB, Databricks Lakehouse, PowerBI).
   3. *DevOps & Architecture* (Docker, Nginx, Linux, Git, REST APIs).
-  4. *Méthodologie & Gestion* (Scrum/Agile, Conduite de réunion, Recueil de besoins, Trello/Jira).
+  4. *Méthodologie & Soft Skills* (Scrum/Agile, Documentation & Passation, Collaboration R&D, Reporting).
 - **Timeline de Parcours Filtrable** : Parcours chronologique avec onglets de filtrage dynamique (*Tous*, *Expériences*, *Formations*).
 - **Vitrine de Projets & Modales Détaillées** :
   - Cartes interactives catégorisées (CNRS, Egerine, Data Lakehouse, Spring Boot).
@@ -121,12 +121,12 @@ Le projet intègre un pipeline d'intégration et de déploiement continus via **
 
 ## 🎯 Profil de Bradley Djedje
 
-- **Poste Actuel** : Chef de Projets Informatique & Développeur Full-Stack (Alternance chez **Semware**).
+- **Poste Actuel** : Développeur Full-Stack (Alternance chez **Semware**).
 - **Formation Supérieure** :
   - **Master MIASHS ICE-LD** (2025 - 2027 • En cours, Université de Toulouse - Ingénierie du Commerce Électronique & Logiciels Distribués).
   - **BUT Informatique** (2022 - 2025, IUT de Blagnac, Université Toulouse 2).
 - **Expériences Professionnelles** :
-  - **Semware** (2025 - Présent) : Chef de Projets IT & Développeur Full-Stack (Alternance).
+  - **Semware** (2025 - Présent) : Développeur Full-Stack (Alternance).
   - **CNRS** (Mars - Juin 2025) : Développeur Backend Django, observatoire robotisé et flux de données scientifiques.
   - **Egerine** (Février - Avril 2024) : Développeur Web Full-Stack Angular, sécurisation d'API REST et administration serveur Linux.
 - **Certifications Obtenues** :
