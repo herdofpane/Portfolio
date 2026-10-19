@@ -1,29 +1,63 @@
 # Portfolio de Bradley Djedje
 
-Site portfolio professionnel, moderne et ultra-performant pour **Bradley Djedje**, Chef de Projets Informatique & Développeur Full-Stack, actuellement **en alternance chez Semware** et étudiant en **Master MIASHS ICE-LD** (Université de Toulouse).
+<div align="center">
+
+[![Live Demo](https://img.shields.io/badge/Demo-En_Ligne-success?style=for-the-badge&logo=githubpages&logoColor=white)](https://herdofpane.github.io/Portfolio/)
+[![Astro](https://img.shields.io/badge/Astro-v5-bc52ee?style=for-the-badge&logo=astro&logoColor=white)](https://astro.build/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![CI/CD](https://img.shields.io/badge/CI%2FCD-GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)](https://github.com/herdofpane/Portfolio/actions)
+
+<p align="center">
+  Site portfolio professionnel, moderne et ultra-performant pour <strong>Bradley Djedje</strong>, Chef de Projets Informatique & Développeur Full-Stack, en alternance chez <strong>Semware</strong> et étudiant en <strong>Master MIASHS ICE-LD</strong> (Université de Toulouse).
+</p>
+
+[**🌐 Consulter la Démo en Ligne**](https://herdofpane.github.io/Portfolio/) • [**💼 Profil LinkedIn**](https://linkedin.com/in/bradley-djedje) • [**🐙 GitHub**](https://github.com/herdofpane)
+
+</div>
 
 ---
 
 ## 🚀 Stack Technologique
 
-- **Framework** : [Astro 5](https://astro.build/) (Génération statique hybride ultra-rapide, zéro JS superflu par défaut).
-- **Styling** : [Tailwind CSS v4](https://tailwindcss.com/) via `@tailwindcss/vite` (Dernier moteur compilé avec intégration Vite native et syntaxe CSS moderne `@import "tailwindcss"`).
-- **Design System** : Thème sombre premium avec *Glassmorphism*, orbes lumineux d'ambiance (*ambient glow*), dégradés dynamiques et micro-interactions fluides.
+- **Framework Web** : [Astro 5](https://astro.build/) — Génération statique hybride ultra-rapide (SSG), architecture en îles et zéro JavaScript superflu côté client par défaut.
+- **Moteur de Styles** : [Tailwind CSS v4](https://tailwindcss.com/) via `@tailwindcss/vite` — Moteur de compilation haute performance intégré à Vite, utilisant la nouvelle directive moderne `@import "tailwindcss"`.
+- **Langage & Typage** : [TypeScript](https://www.typescriptlang.org/) — Typage strict des données de projets, parcours chronologique et certifications.
+- **Design System & UI** :
+  - Palette sombre contemporaine (*Dark Mode*) avec accents Cyan, Bleu et Violet.
+  - Effets de transparence et flous d'arrière-plan (*Glassmorphism*).
+  - Orbes lumineux d'ambiance dynamiques (*Ambient Glow*).
+  - Micro-interactions, transitions douces et conformité accessibilité (WCAG AA).
 - **Typographie** : *Plus Jakarta Sans* & *Space Grotesk* (Google Fonts).
-- **Typage & Rigueur** : TypeScript (Interfaces pour les projets, certifications et timeline).
+- **CI/CD & Hébergement** : GitHub Actions pour le build automatisé et déploiement continu sur GitHub Pages.
 
 ---
 
 ## ✨ Fonctionnalités Clés
 
-- **En-tête fixe & Navigation fluide** : Menu de navigation avec indicateur de section active, bouton d'action directe et menu burger adaptatif sur mobile.
-- **Hero interactif** : Présentation percutante du profil avec badge de statut d'alternance animé, résumé en console de code interactive, statistiques clés et bouton de copie d'adresse email en 1 clic dans le presse-papier.
-- **Section À Propos & Vision** : Mise en valeur de la double compétence technique et gestion de projet (Alternance Semware, Master MIASHS ICE-LD, BUT Informatique).
-- **Matrice de Compétences** : Cartographie des savoir-faire en 4 piliers (Full-Stack, Bases de données & Data, DevOps & Systèmes, Méthodologie & Soft Skills) avec mise en avant des compétences maîtresses.
-- **Timeline de Parcours filtrable** : Historique interactif chronologique avec filtres par catégorie (*Tout*, *Expériences*, *Formations*).
-- **Vitrine de Projets & Modales interactives** : Fiches projets avec tags technologiques et ouverture d'une fenêtre modale détaillée (contexte, missions clés, livrables, technologies).
-- **Certifications & Accréditations** : Mise en avant des certifications vérifiées (Databricks, HackerRank, Postman).
-- **Contact & Feedback Utilisateur** : Coordonnées directes, boutons de copie rapide, formulaire de prise de contact préformaté et système de notifications *toast* flottantes.
+- **Navigation fluide & Sticky Header** : En-tête fixe avec effet de flou dynamique, suivi des sections actives, menu burger optimisé mobile et bouton d'action directe.
+- **Hero Interactif** :
+  - Badge animé avec statut de disponibilité pour alternance.
+  - Console de code interactive simulant l'exécution d'un profil développeur.
+  - Indicateurs et statistiques clés (années d'expérience, projets menés, certifications).
+  - Action rapide de copie de l'adresse email dans le presse-papier avec feedback visuel instantané.
+- **À Propos & Vision Métier** : Synthèse de la double compétence technique et gestion de projet (Alternance chez Semware, Master MIASHS ICE-LD, BUT Informatique).
+- **Matrice de Compétences 360°** : Organisée en 4 piliers majeurs :
+  1. *Full-Stack Development* (Python, Django, Angular, TypeScript, Spring Boot, PHP).
+  2. *Data & Databases* (PostgreSQL, MySQL, MongoDB, Databricks Lakehouse, PowerBI).
+  3. *DevOps & Architecture* (Docker, Nginx, Linux, Git, REST APIs).
+  4. *Méthodologie & Gestion* (Scrum/Agile, Conduite de réunion, Recueil de besoins, Trello/Jira).
+- **Timeline de Parcours Filtrable** : Parcours chronologique avec onglets de filtrage dynamique (*Tous*, *Expériences*, *Formations*).
+- **Vitrine de Projets & Modales Détaillées** :
+  - Cartes interactives catégorisées (CNRS, Egerine, Data Lakehouse, Spring Boot).
+  - Modales d'exploration détaillée (contexte projet, missions clés, livrables, technologies).
+  - Gestion ergonomique de la fermeture (touche `Échap`, clic sur le fond et bouton dédié).
+- **Certifications Reconnues** : Accréditations officielles vérifiées (Databricks Fundamentals, HackerRank Python, Postman API Student Expert).
+- **Prise de Contact & Feedback Toast** :
+  - Coordonnées directes (email, téléphone, localisation avec mention de mobilité).
+  - Boutons de copie rapide en un clic pour les coordonnées.
+  - Formulaire de message préformaté prêt à l'envoi.
+  - Système global de notifications *toast* flottantes pour informer l'utilisateur des actions réussies.
 
 ---
 
@@ -31,69 +65,82 @@ Site portfolio professionnel, moderne et ultra-performant pour **Bradley Djedje*
 
 ```text
 site portfolio/
+├── .github/
+│   └── workflows/
+│       └── deploy.yml           # Pipeline CI/CD GitHub Actions vers GitHub Pages
 ├── src/
 │   ├── components/
-│   │   ├── Header.astro         # Barre de navigation fixe, logo et liens d'ancrage
-│   │   ├── Hero.astro           # Accroche principale, stats, console interacteur et CTA
-│   │   ├── About.astro          # Vision, alternance Semware et atouts du profil
-│   │   ├── Skills.astro         # Matrice des compétences organisée en 4 piliers
-│   │   ├── Timeline.astro       # Parcours interactif avec filtres d'expérience et formation
-│   │   ├── Projects.astro       # Cartes des projets phares (CNRS, Egerine, Data, Spring Boot)
-│   │   ├── ProjectModal.astro   # Modale plein écran avec détails des missions et livrables
-│   │   ├── Certifications.astro # Accréditations Cloud, Python et API
-│   │   ├── Contact.astro        # Coordonnées directes, formulaire et boutons d'action
-│   │   └── Footer.astro         # Liens sociaux, copyright et retour rapide
+│   │   ├── Header.astro         # Barre de navigation fixe, logo et ancres
+│   │   ├── Hero.astro           # Présentation principale, console interactive et CTA
+│   │   ├── About.astro          # Vision, parcours Semware et compétences clés
+│   │   ├── Skills.astro         # Matrice de compétences en 4 piliers
+│   │   ├── Timeline.astro       # Timeline chronologique avec filtres dynamiques
+│   │   ├── Projects.astro       # Cartes de projets avec tags et déclencheurs de modale
+│   │   ├── ProjectModal.astro   # Fenêtre modale avec détails des missions et livrables
+│   │   ├── Certifications.astro # Badges et certifications officielles
+│   │   ├── Contact.astro        # Coordonnées, boutons de copie et formulaire de contact
+│   │   └── Footer.astro         # Copyright, mentions techniques et liens rapides
 │   ├── layouts/
-│   │   └── Layout.astro         # Structure HTML5, SEO, OpenGraph, orbes et système de toast
+│   │   └── Layout.astro         # Shell HTML5, SEO, OpenGraph, orbes et gestionnaire de toasts
 │   ├── pages/
-│   │   └── index.astro          # Page d'accueil assemblant l'ensemble des composants
+│   │   └── index.astro          # Assemblage de la page d'accueil
 │   └── styles/
-│       └── global.css           # Thème sombre, glassmorphism et utilitaires de style
-├── astro.config.mjs             # Configuration Astro avec le plugin Tailwind CSS v4
-├── package.json                 # Dépendances et scripts de développement
-└── README.md                    # Documentation complète du projet
+│       └── global.css           # Thème sombre, utilitaires glassmorphism et animations
+├── astro.config.mjs             # Configuration Astro (site, base path, Tailwind v4)
+├── package.json                 # Scripts de build et dépendances
+├── tsconfig.json                # Configuration TypeScript
+└── README.md                    # Documentation du projet
 ```
 
 ---
 
 ## 🛠️ Commandes Disponibles
 
-### Installation des dépendances
-```bash
-npm install
-```
+| Commande | Action |
+| :--- | :--- |
+| `npm install` | Installe les dépendances du projet |
+| `npm run dev` (ou `npm start`) | Démarre le serveur local de développement (`http://localhost:4321/Portfolio/`) |
+| `npm run build` | Compile le site statique optimisé pour la production dans le dossier `dist/` |
+| `npm run preview` | Lance un serveur local pour prévisualiser le build de production |
+| `npm run astro` | Exécute des commandes Astro CLI (ex: `npm run astro check`) |
 
-### Démarrer le serveur de développement local
-```bash
-npm run dev
-```
-Le site sera accessible localement sur `http://localhost:4321`.
+---
 
-### Compiler le projet pour la production
-```bash
-npm run build
-```
-Les fichiers statiques optimisés pour le déploiement sont générés dans le dossier `dist/`.
+## 🌐 Déploiement Continu (CI/CD)
 
-### Prévisualiser le build de production localement
-```bash
-npm run preview
-```
+Le projet intègre un pipeline d'intégration et de déploiement continus via **GitHub Actions** ([`.github/workflows/deploy.yml`](.github/workflows/deploy.yml)) :
+
+1. **Déclenchement automatique** : À chaque `push` sur la branche `main` ou via exécution manuelle (`workflow_dispatch`).
+2. **Build reproductible** :
+   - Environnement Ubuntu avec Node.js 20.
+   - Installation déterministe via `npm ci`.
+   - Compilation Astro optimisée avec injection des paramètres de déploiement (`--site` et `--base`).
+3. **Déploiement sur GitHub Pages** : Publication instantanée sans interruption de service sur [herdofpane.github.io/Portfolio](https://herdofpane.github.io/Portfolio/).
 
 ---
 
 ## 🎯 Profil de Bradley Djedje
 
-- **Poste actuel** : Chef de Projets Informatique & Développeur Full-Stack (Alternance chez **Semware**).
-- **Cursus universitaire** :
+- **Poste Actuel** : Chef de Projets Informatique & Développeur Full-Stack (Alternance chez **Semware**).
+- **Formation Supérieure** :
   - **Master MIASHS ICE-LD** (2025 - 2027 • En cours, Université de Toulouse - Ingénierie du Commerce Électronique & Logiciels Distribués).
   - **BUT Informatique** (2022 - 2025, IUT de Blagnac, Université Toulouse 2).
-- **Parcours professionnel** :
+- **Expériences Professionnelles** :
   - **Semware** (2025 - Présent) : Chef de Projets IT & Développeur Full-Stack (Alternance).
-  - **CNRS** (Mars - Juin 2025) : Développeur Backend Django pour observatoire robotisé, automatisation Python et collaboration scientifique.
-  - **Egerine** (Février - Avril 2024) : Développeur Web Full-Stack Angular, sécurisation d'API REST, administration serveur et documentation.
-- **Certifications** :
-  - **Databricks Fundamentals Accreditation** (Databricks Academy)
-  - **Python (Basic) Certificate** (HackerRank)
-  - **Postman API Fundamentals Student Expert** (Postman)
-- **Localisation & Contact** : Toulouse (Permis B, véhiculé) • `djedjebradley77@gmail.com`.
+  - **CNRS** (Mars - Juin 2025) : Développeur Backend Django, observatoire robotisé et flux de données scientifiques.
+  - **Egerine** (Février - Avril 2024) : Développeur Web Full-Stack Angular, sécurisation d'API REST et administration serveur Linux.
+- **Certifications Obtenues** :
+  - **Databricks Fundamentals Accreditation** (Databricks Academy).
+  - **Python (Basic) Certificate** (HackerRank).
+  - **Postman API Fundamentals Student Expert** (Postman).
+- **Contact & Réseaux** :
+  - 📧 Email : [djedjebradley77@gmail.com](mailto:djedjebradley77@gmail.com)
+  - 💼 LinkedIn : [linkedin.com/in/bradley-djedje](https://linkedin.com/in/bradley-djedje)
+  - 🐙 GitHub : [github.com/herdofpane](https://github.com/herdofpane)
+  - 📍 Localisation : Toulouse, France (Permis B, véhiculé & mobile)
+
+---
+
+<div align="center">
+  <sub>Conçu et développé avec passion par Bradley Djedje • Propulsé par Astro & Tailwind CSS v4</sub>
+</div>
