@@ -14,3 +14,7 @@ node_modules/
 # System files
 .DS_Store
 Thumbs.db
+
+# Markdown documentation & rules (keep only README.md)
+*.md
+!README.md
