@@ -1,4 +1,4 @@
-# Portfolio de Bradley Djedje
+# Portfolio Web
 
 <div align="center">
 
@@ -9,59 +9,54 @@
 [![CI/CD](https://img.shields.io/badge/CI%2FCD-GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)](https://github.com/herdofpane/Portfolio/actions)
 
 <p align="center">
-  Site portfolio professionnel, moderne et ultra-performant pour <strong>Bradley Djedje</strong>, Développeur Full-Stack, en alternance chez <strong>Semware</strong> et étudiant en <strong>Master MIASHS ICE-LD</strong> (Université de Toulouse).
+  Site portfolio professionnel, moderne et ultra-performant, conçu avec Astro et Tailwind CSS v4.
 </p>
 
-[**🌐 Consulter la Démo en Ligne**](https://herdofpane.github.io/Portfolio/) • [**💼 Profil LinkedIn**](https://linkedin.com/in/bradley-djedje) • [**🐙 GitHub**](https://github.com/herdofpane)
+[**Consulter la Démo en Ligne**](https://herdofpane.github.io/Portfolio/) • [**Dépôt GitHub**](https://github.com/herdofpane/Portfolio)
 
 </div>
 
 ---
 
-## 🚀 Stack Technologique
+## Stack Technologique
 
 - **Framework Web** : [Astro 5](https://astro.build/) — Génération statique hybride ultra-rapide (SSG), architecture en îles et zéro JavaScript superflu côté client par défaut.
-- **Moteur de Styles** : [Tailwind CSS v4](https://tailwindcss.com/) via `@tailwindcss/vite` — Moteur de compilation haute performance intégré à Vite, utilisant la nouvelle directive moderne `@import "tailwindcss"`.
-- **Langage & Typage** : [TypeScript](https://www.typescriptlang.org/) — Typage strict des données de projets, parcours chronologique et certifications.
-- **Design System & UI** :
+- **Moteur de Styles** : [Tailwind CSS v4](https://tailwindcss.com/) via `@tailwindcss/vite` — Moteur de compilation haute performance intégré à Vite, utilisant la directive moderne `@import "tailwindcss"`.
+- **Langage et Typage** : [TypeScript](https://www.typescriptlang.org/) — Typage strict des structures de données, composants et interactions.
+- **Design System et UI** :
   - Palette sombre contemporaine (*Dark Mode*) avec accents Cyan, Bleu et Violet.
   - Effets de transparence et flous d'arrière-plan (*Glassmorphism*).
   - Orbes lumineux d'ambiance dynamiques (*Ambient Glow*).
   - Micro-interactions, transitions douces et conformité accessibilité (WCAG AA).
-- **Typographie** : *Plus Jakarta Sans* & *Space Grotesk* (Google Fonts).
-- **CI/CD & Hébergement** : GitHub Actions pour le build automatisé et déploiement continu sur GitHub Pages.
+- **Typographie** : *Plus Jakarta Sans* et *Space Grotesk* (Google Fonts).
+- **CI/CD et Hébergement** : GitHub Actions pour le build automatisé et déploiement continu sur GitHub Pages.
 
 ---
 
-## ✨ Fonctionnalités Clés
+## Fonctionnalités Clés
 
-- **Navigation fluide & Sticky Header** : En-tête fixe avec effet de flou dynamique, suivi des sections actives, menu burger optimisé mobile et bouton d'action directe.
+- **Navigation fluide et Sticky Header** : En-tête fixe avec effet de flou dynamique, suivi des sections actives, menu burger optimisé mobile et bouton d'action directe.
 - **Hero Interactif** :
-  - Badge animé avec statut de disponibilité pour alternance.
-  - Console de code interactive simulant l'exécution d'un profil développeur.
-  - Indicateurs et statistiques clés (années d'expérience, projets menés, certifications).
-  - Action rapide de copie de l'adresse email dans le presse-papier avec feedback visuel instantané.
-- **À Propos & Parcours** : Présentation du profil Développeur Full-Stack, associant rigueur d'ingénierie logicielle et compréhension des enjeux métiers (Alternance chez Semware, Master MIASHS ICE-LD, BUT Informatique).
-- **Matrice de Compétences 360°** : Organisée en 4 piliers majeurs :
-  1. *Full-Stack Development* (Python, Django, Angular, TypeScript, Spring Boot, PHP).
-  2. *Data & Databases* (PostgreSQL, MySQL, MongoDB, Databricks Lakehouse, PowerBI).
-  3. *DevOps & Architecture* (Docker, Nginx, Linux, Git, REST APIs).
-  4. *Méthodologie & Soft Skills* (Scrum/Agile, Documentation & Passation, Collaboration R&D, Reporting).
-- **Timeline de Parcours Filtrable** : Parcours chronologique avec onglets de filtrage dynamique (*Tous*, *Expériences*, *Formations*).
-- **Vitrine de Projets & Modales Détaillées** :
-  - Cartes interactives catégorisées (CNRS, Egerine, Data Lakehouse, Spring Boot).
-  - Modales d'exploration détaillée (contexte projet, missions clés, livrables, technologies).
-  - Gestion ergonomique de la fermeture (touche `Échap`, clic sur le fond et bouton dédié).
-- **Certifications Reconnues** : Accréditations officielles vérifiées (Databricks Fundamentals, HackerRank Python, Postman API Student Expert).
-- **Prise de Contact & Feedback Toast** :
-  - Coordonnées directes (email, téléphone, localisation avec mention de mobilité).
-  - Boutons de copie rapide en un clic pour les coordonnées.
+  - Badge animé avec statut de disponibilité.
+  - Console de code interactive simulant un terminal de développement.
+  - Indicateurs et métriques clés.
+  - Action rapide de copie des coordonnées avec retour visuel immédiat.
+- **Présentation et À Propos** : Mise en valeur du profil technique, de la méthodologie logicielle et du positionnement professionnel.
+- **Matrice de Compétences** : Grille modulaire organisée par domaines techniques (Full-Stack, Bases de données, DevOps et Méthodologies).
+- **Timeline Chronologique** : Parcours professionnel et académique avec système d'onglets de filtrage dynamique.
+- **Vitrine de Projets et Modales Détaillées** :
+  - Cartes interactives de réalisations avec tags technologiques.
+  - Modales d'exploration détaillée (contexte, missions, livrables et stack associée).
+  - Gestion ergonomique de la fermeture (touche Échap, clic sur le fond et bouton dédié).
+- **Section Certifications** : Présentation structurée des accréditations et certifications officielles.
+- **Prise de Contact et Notifications Toast** :
+  - Coordonnées directes et boutons de copie rapide en un clic.
   - Formulaire de message préformaté prêt à l'envoi.
-  - Système global de notifications *toast* flottantes pour informer l'utilisateur des actions réussies.
+  - Système global de notifications toast flottantes pour informer l'utilisateur des actions réussies.
 
 ---
 
-## 📁 Architecture du Projet
+## Architecture du Projet
 
 ```text
 site portfolio/
@@ -72,7 +67,7 @@ site portfolio/
 │   ├── components/
 │   │   ├── Header.astro         # Barre de navigation fixe, logo et ancres
 │   │   ├── Hero.astro           # Présentation principale, console interactive et CTA
-│   │   ├── About.astro          # Vision, parcours Semware et compétences clés
+│   │   ├── About.astro          # Vision, parcours et compétences clés
 │   │   ├── Skills.astro         # Matrice de compétences en 4 piliers
 │   │   ├── Timeline.astro       # Timeline chronologique avec filtres dynamiques
 │   │   ├── Projects.astro       # Cartes de projets avec tags et déclencheurs de modale
@@ -95,7 +90,7 @@ site portfolio/
 
 ---
 
-## 🛠️ Commandes Disponibles
+## Commandes Disponibles
 
 | Commande | Action |
 | :--- | :--- |
@@ -107,7 +102,7 @@ site portfolio/
 
 ---
 
-## 🌐 Déploiement Continu (CI/CD)
+## Déploiement Continu (CI/CD)
 
 Le projet intègre un pipeline d'intégration et de déploiement continus via **GitHub Actions** ([`.github/workflows/deploy.yml`](.github/workflows/deploy.yml)) :
 
@@ -120,28 +115,6 @@ Le projet intègre un pipeline d'intégration et de déploiement continus via **
 
 ---
 
-## 🎯 Profil de Bradley Djedje
-
-- **Poste Actuel** : Développeur Full-Stack (Alternance chez **Semware**).
-- **Formation Supérieure** :
-  - **Master MIASHS ICE-LD** (2025 - 2027 • En cours, Université de Toulouse - Ingénierie du Commerce Électronique & Logiciels Distribués).
-  - **BUT Informatique** (2022 - 2025, IUT de Blagnac, Université Toulouse 2).
-- **Expériences Professionnelles** :
-  - **Semware** (2025 - Présent) : Développeur Full-Stack (Alternance).
-  - **CNRS** (Mars - Juin 2025) : Développeur Backend Django, observatoire robotisé et flux de données scientifiques.
-  - **Egerine** (Février - Avril 2024) : Développeur Web Full-Stack Angular, sécurisation d'API REST et administration serveur Linux.
-- **Certifications Obtenues** :
-  - **Databricks Fundamentals Accreditation** (Databricks Academy).
-  - **Python (Basic) Certificate** (HackerRank).
-  - **Postman API Fundamentals Student Expert** (Postman).
-- **Contact & Réseaux** :
-  - 📧 Email : [djedjebradley77@gmail.com](mailto:djedjebradley77@gmail.com)
-  - 💼 LinkedIn : [linkedin.com/in/bradley-djedje](https://linkedin.com/in/bradley-djedje)
-  - 🐙 GitHub : [github.com/herdofpane](https://github.com/herdofpane)
-  - 📍 Localisation : Toulouse, France (Permis B, véhiculé & mobile)
-
----
-
 <div align="center">
-  <sub>Conçu et développé avec passion par Bradley Djedje • Propulsé par Astro & Tailwind CSS v4</sub>
+  <sub>Site portfolio personnel • Développé avec Astro et Tailwind CSS v4</sub>
 </div>
