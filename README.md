@@ -79,13 +79,14 @@ site portfolio/
 │   │   ├── ProjectModal.astro   # Fenêtre modale avec détails des missions et livrables
 │   │   ├── Certifications.astro # Badges et certifications officielles
 │   │   ├── Contact.astro        # Coordonnées, boutons de copie et formulaire de contact
-│   │   └── Footer.astro         # Copyright, mentions techniques et liens rapides
+│   │   └── Footer.astro         # Copyright, identité professionnelle et ancre de retour
 │   ├── layouts/
 │   │   └── Layout.astro         # Shell HTML5, SEO, OpenGraph, orbes et gestionnaire de toasts
 │   ├── pages/
 │   │   └── index.astro          # Assemblage de la page d'accueil
 │   └── styles/
 │       └── global.css           # Thème sombre, utilitaires glassmorphism et animations
+├── .npmrc                       # Configuration locale npm (optimisation des sorties d'installation)
 ├── astro.config.mjs             # Configuration Astro (site, base path, Tailwind v4)
 ├── package.json                 # Scripts de build et dépendances
 ├── tsconfig.json                # Configuration TypeScript
