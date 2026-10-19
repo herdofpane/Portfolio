@@ -1,0 +1,86 @@
+---
+const navLinks = [
+  { name: 'À propos', href: '#about' },
+  { name: 'Compétences', href: '#skills' },
+  { name: 'Parcours', href: '#experiences' },
+  { name: 'Projets', href: '#projects' },
+  { name: 'Certifications', href: '#certifications' },
+  { name: 'Contact', href: '#contact' },
+];
+---
+
+<header class="fixed top-0 left-0 w-full z-40 transition-all duration-300 backdrop-blur-md bg-slate-950/70 border-b border-white/10" id="navbar">
+  <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+    <!-- Brand logo -->
+    <a href="#hero" class="flex items-center gap-3 group">
+      <div class="size-10 rounded-xl bg-gradient-to-tr from-cyan-500 via-blue-500 to-purple-600 flex items-center justify-center font-extrabold text-white shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform">
+        BD
+      </div>
+      <span class="font-bold text-xl tracking-tight text-white">Bradley<span class="text-cyan-400">.</span></span>
+    </a>
+
+    <!-- Navigation Menu (Desktop) -->
+    <nav class="hidden md:flex items-center gap-8">
+      {navLinks.map((link) => (
+        <a 
+          href={link.href} 
+          class="text-sm font-medium text-slate-400 hover:text-white transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-gradient-to-r after:from-cyan-400 after:to-purple-500 hover:after:w-full after:transition-all"
+        >
+          {link.name}
+        </a>
+      ))}
+    </nav>
+
+    <!-- Header Actions -->
+    <div class="flex items-center gap-4">
+      <a 
+        href="#contact" 
+        class="hidden sm:inline-flex items-center justify-center px-4 py-2 text-xs font-semibold uppercase tracking-wider text-cyan-300 border border-cyan-500/40 rounded-full hover:bg-cyan-500/10 hover:border-cyan-400 transition-all"
+      >
+        Discutons
+      </a>
+
+      <!-- Mobile Menu Toggle -->
+      <button 
+        id="mobile-btn"
+        class="md:hidden size-10 rounded-xl bg-white/5 border border-white/10 flex flex-col items-center justify-center gap-1.5 text-slate-300"
+        aria-label="Menu"
+      >
+        <span class="w-5 h-0.5 bg-current"></span>
+        <span class="w-5 h-0.5 bg-current"></span>
+        <span class="w-5 h-0.5 bg-current"></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Dropdown -->
+  <div id="mobile-menu" class="hidden md:hidden border-t border-white/10 bg-slate-950/95 backdrop-blur-xl px-6 py-6 space-y-4">
+    {navLinks.map((link) => (
+      <a 
+        href={link.href} 
+        class="block text-base font-medium text-slate-300 hover:text-cyan-400 py-1"
+        onclick="document.getElementById('mobile-menu').classList.add('hidden')"
+      >
+        {link.name}
+      </a>
+    ))}
+    <a 
+      href="#contact"
+      class="block text-center w-full py-2.5 mt-2 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-xl font-semibold text-sm"
+      onclick="document.getElementById('mobile-menu').classList.add('hidden')"
+    >
+      Contacter Bradley
+    </a>
+  </div>
+</header>
+
+<script>
+  const mobileBtn = document.getElementById('mobile-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  if (mobileBtn && mobileMenu) {
+    mobileBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  }
+</script>

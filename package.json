@@ -1,0 +1,17 @@
+{
+  "name": "portfolio-bradley-djedje",
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.0.9",
+    "astro": "^5.4.1",
+    "tailwindcss": "^4.0.9"
+  }
+}

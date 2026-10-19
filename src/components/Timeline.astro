@@ -1,0 +1,189 @@
+---
+const timelineData = [
+  {
+    type: 'experience',
+    date: '2025 - Présent • En cours',
+    title: 'Chef de Projets Informatique & Développeur Full-Stack (Alternance)',
+    subtitle: 'Semware',
+    desc: "Alternance en entreprise au sein de Semware, alliant pilotage opérationnel de projets IT, conception technique et développement de solutions applicatives.",
+    bullets: [
+      "Coordination et suivi des livrables techniques en méthodologie Agile.",
+      "Conception, développement et maintenance de fonctionnalités full-stack.",
+      "Collaboration avec les équipes métiers et techniques pour répondre aux besoins opérationnels."
+    ],
+    tags: ['Alternance', 'Semware', 'Chef de Projet', 'Full-Stack', 'Agile Scrum'],
+    isCurrent: true
+  },
+  {
+    type: 'education',
+    date: '2025 - 2027 • En cours',
+    title: 'Master MIASHS ICE-LD',
+    subtitle: 'Université de Toulouse • Ingénierie du Commerce Électronique & Logiciels Distribués',
+    desc: "Master d'excellence suivi en alternance (rythme 2 semaines université / 5 semaines entreprise). Spécialisation en architecture logicielle distribuée, ingénierie de la donnée et management des systèmes d'information.",
+    tags: ['Master', 'En cours', 'Systèmes Distribués', 'Management IT', 'Cloud & Data'],
+    isCurrent: true
+  },
+  {
+    type: 'experience',
+    date: 'Mars 2025 - Juin 2025',
+    title: 'Développeur Backend (Stage)',
+    subtitle: 'CNRS (Centre National de la Recherche Scientifique)',
+    desc: "Refactorisation et évolution d'une architecture logicielle Django pour un observatoire robotisé de recherche. Automatisation de fonctionnalités de traitement de flux en Python et collaboration directe avec les chercheurs.",
+    bullets: [
+      "Refactorisation et évolution d'une architecture Django pour un observatoire robotisé.",
+      "Développement de fonctionnalités automatisées en Python.",
+      "Collaboration avec les chercheurs pour l'intégration de nouveaux modules."
+    ],
+    tags: ['Python', 'Django', 'Systèmes Robotisés', 'R&D', 'Automatisation'],
+    isCurrent: false
+  },
+  {
+    type: 'education',
+    date: '2022 - 2025',
+    title: 'BUT Informatique',
+    subtitle: 'IUT de Blagnac, Université Toulouse 2',
+    desc: 'Parcours : Développement logiciel, Gestion de données & Réseaux. Solide formation en algorithmique, programmation orientée objet, bases de données relationnelles / NoSQL et gestion de projet Agile.',
+    tags: ['BUT Informatique', 'Génie Logiciel', 'Bases de Données', 'Réseaux', 'Scrum'],
+    isCurrent: false
+  },
+  {
+    type: 'experience',
+    date: 'Février 2024 - Avril 2024',
+    title: 'Développeur Web Full-Stack (Stage)',
+    subtitle: 'Egerine',
+    desc: "Conception complète d'une solution web : développement de l'interface en Angular, conception et sécurisation des API REST, administration et déploiement du serveur, puis rédaction de la documentation de passation.",
+    bullets: [
+      "Développement Front-End avec Angular et conception d'API sécurisées.",
+      "Gestion et déploiement du serveur (application et base de données).",
+      "Rédaction de la documentation technique complète pour la passation."
+    ],
+    tags: ['Angular', 'API REST', 'Serveur Linux', 'Bases de Données', 'Documentation'],
+    isCurrent: false
+  }
+];
+---
+
+<section id="experiences" class="py-24 relative">
+  <div class="max-w-7xl mx-auto px-6">
+    
+    <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+      <span class="text-cyan-400 font-bold tracking-widest text-xs uppercase">Trajectoire &amp; Parcours</span>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Expériences &amp; Formations</h2>
+      <p class="text-slate-400 text-base sm:text-lg">
+        L'association d'expériences en laboratoire de recherche, en entreprise et d'un solide cursus académique.
+      </p>
+    </div>
+
+    <!-- Filter Buttons -->
+    <div class="flex items-center justify-center gap-3 mb-16">
+      <button 
+        class="timeline-filter-btn active px-5 py-2 rounded-full text-xs font-semibold bg-cyan-500 text-slate-950 shadow-md shadow-cyan-500/20 transition-all cursor-pointer"
+        data-filter="all"
+      >
+        Vue Globale
+      </button>
+      <button 
+        class="timeline-filter-btn px-5 py-2 rounded-full text-xs font-semibold bg-white/5 hover:bg-white/10 text-slate-300 border border-white/10 transition-all cursor-pointer"
+        data-filter="experience"
+      >
+        Expériences Professionnelles
+      </button>
+      <button 
+        class="timeline-filter-btn px-5 py-2 rounded-full text-xs font-semibold bg-white/5 hover:bg-white/10 text-slate-300 border border-white/10 transition-all cursor-pointer"
+        data-filter="education"
+      >
+        Formations
+      </button>
+    </div>
+
+    <!-- Timeline List -->
+    <div class="max-w-3xl mx-auto space-y-8 relative before:content-[''] before:absolute before:top-4 before:bottom-4 before:left-3.5 before:w-0.5 before:bg-gradient-to-b before:from-cyan-400 before:via-purple-500 before:to-slate-800 pl-10">
+      
+      {timelineData.map((item) => (
+        <div 
+          class={`timeline-item glass-card rounded-2xl p-6 sm:p-8 relative transition-all duration-300 ${
+            item.isCurrent ? 'border-cyan-500/40 bg-cyan-500/5 shadow-lg shadow-cyan-500/5' : ''
+          }`}
+          data-type={item.type}
+        >
+          <!-- Timeline Marker -->
+          <div class={`absolute top-8 -left-10 size-7 rounded-full bg-slate-950 border-2 flex items-center justify-center ${
+            item.isCurrent ? 'border-cyan-400 shadow-md shadow-cyan-500/30' : 'border-slate-700'
+          }`}>
+            <span class={`size-2.5 rounded-full ${item.isCurrent ? 'bg-cyan-400 animate-pulse' : 'bg-slate-600'}`}></span>
+          </div>
+
+          <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+            <span class={`text-xs font-bold uppercase tracking-wider ${
+              item.isCurrent ? 'text-cyan-400' : 'text-slate-400'
+            }`}>
+              {item.date}
+            </span>
+            <div class="flex items-center gap-2">
+              {item.isCurrent && (
+                <span class="text-[11px] px-2 py-0.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 font-semibold">
+                  En cours
+                </span>
+              )}
+              <span class="text-xs px-2.5 py-0.5 rounded-full bg-white/5 text-slate-400 font-medium">
+                {item.type === 'experience' ? 'Expérience Pro' : 'Formation'}
+              </span>
+            </div>
+          </div>
+
+          <h3 class="text-xl font-bold text-white mb-1">{item.title}</h3>
+          <h4 class="text-sm font-semibold text-slate-300 mb-4">{item.subtitle}</h4>
+          
+          <p class="text-sm text-slate-400 leading-relaxed mb-4">{item.desc}</p>
+
+          {item.bullets && (
+            <ul class="space-y-2 mb-4 text-xs sm:text-sm text-slate-300">
+              {item.bullets.map((b) => (
+                <li class="flex items-start gap-2">
+                  <span class="text-cyan-400 mt-1">•</span>
+                  <span>{b}</span>
+                </li>
+              ))}
+            </ul>
+          )}
+
+          <div class="flex flex-wrap gap-2 pt-2 border-t border-white/10">
+            {item.tags.map((tag) => (
+              <span class="text-xs px-2.5 py-1 rounded-full bg-white/5 text-slate-300 font-medium">
+                {tag}
+              </span>
+            ))}
+          </div>
+        </div>
+      ))}
+
+    </div>
+
+  </div>
+</section>
+
+<script>
+  const filterBtns = document.querySelectorAll('.timeline-filter-btn');
+  const items = document.querySelectorAll('.timeline-item');
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => {
+        b.classList.remove('active', 'bg-cyan-500', 'text-slate-950');
+        b.classList.add('bg-white/5', 'text-slate-300');
+      });
+      btn.classList.add('active', 'bg-cyan-500', 'text-slate-950');
+      btn.classList.remove('bg-white/5', 'text-slate-300');
+
+      const filter = btn.getAttribute('data-filter');
+      items.forEach((item: any) => {
+        const itemType = item.getAttribute('data-type');
+        if (filter === 'all' || itemType === filter) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>

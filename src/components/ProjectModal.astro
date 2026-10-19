@@ -1,0 +1,151 @@
+---
+---
+
+<div id="project-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md hidden transition-opacity duration-300 opacity-0">
+  <div class="relative w-full max-w-2xl max-h-[85vh] overflow-y-auto glass-card rounded-3xl p-6 sm:p-10 border-white/20 shadow-2xl bg-slate-900/95">
+    
+    <!-- Close button -->
+    <button id="close-modal-btn" class="absolute top-6 right-6 size-9 rounded-full bg-white/10 hover:bg-rose-500/20 text-slate-300 hover:text-rose-400 flex items-center justify-center transition-all cursor-pointer">
+      <svg class="size-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+
+    <!-- Content Target -->
+    <div id="modal-content" class="space-y-6">
+      <!-- Dynamic JS Injection -->
+    </div>
+
+  </div>
+</div>
+
+<script>
+  const projectDetails: Record<string, any> = {
+    cnrs: {
+      category: 'Backend & Robotique Scientifique',
+      title: 'Architecture & Automatisation - Observatoire Robotisé',
+      org: 'CNRS • Stage Mars - Juin 2025',
+      overview: "Projet de recherche à haute valeur technologique visant le pilotage logiciel d'un observatoire robotisé.",
+      challenges: [
+        "Refactorisation et montée de version de l'architecture Django pour améliorer la modularité.",
+        "Automatisation en Python de l'ingestion, du traitement et de la fiabilisation des flux de données.",
+        "Collaboration directe avec les scientifiques pour implémenter leurs besoins d'instrumentation."
+      ],
+      stack: ['Python', 'Django', 'Architecture Logicielle', 'Linux', 'GitLab'],
+      deliverables: "Architecture stabilisée, chaîne d'automatisation des flux opérationnelle et documentation technique associée."
+    },
+    egerine: {
+      category: 'Full-Stack & DevOps',
+      title: 'Plateforme Web & API Sécurisée',
+      org: 'Egerine • Stage Février - Avril 2024',
+      overview: "Conception, développement et mise en production d'une application d'entreprise complète.",
+      challenges: [
+        "Développement de composants interactifs et d'une interface responsive en Angular.",
+        "Conception, sécurisation et tests d'API REST pour échanger avec le serveur.",
+        "Configuration du serveur applicatif Linux/Nginx et de la base de données relationnelle.",
+        "Rédaction du dossier complet de passation pour l'équipe technique interne."
+      ],
+      stack: ['Angular', 'TypeScript', 'API REST', 'Linux', 'Nginx', 'PostgreSQL'],
+      deliverables: "Application web déployée en production, API documentée et guide de passation opérationnelle."
+    },
+    data: {
+      category: 'Data Engineering & Cloud',
+      title: 'Pipeline Data & Analytics Lakehouse',
+      org: 'Projet Personnel & Certifications • 2025 - 2026',
+      overview: "Mise en pratique approfondie des concepts du Lakehouse (Databricks) et de la visualisation décisionnelle.",
+      challenges: [
+        "Conception de flux d'ingestion et de transformation de jeux de données avec Python.",
+        "Structuration en couches multi-niveaux (Bronze / Silver / Gold) inspirée des standards Databricks.",
+        "Conception de tableaux de bord interactifs PowerBI pour restituer des indicateurs clés."
+      ],
+      stack: ['Databricks', 'Python', 'PostgreSQL', 'PowerBI', 'HackerRank'],
+      deliverables: "Scripts de transformation nettoyés, schéma de données Lakehouse et dashboards décisionnels."
+    },
+    springboot: {
+      category: 'Architecture Distribuée & Méthodologie',
+      title: 'Services Distribués & Gestion Agile',
+      org: 'BUT Informatique Blagnac • 2024 - 2025',
+      overview: "Projet académique simulant une organisation en entreprise sous méthodologie Scrum.",
+      challenges: [
+        "Développement de micro-services Java Spring Boot et Symfony (PHP).",
+        "Modélisation hybride avec persistance SQL (PostgreSQL) et documents NoSQL (MongoDB).",
+        "Conteneurisation complète avec Docker pour un environnement de développement unifié.",
+        "Organisation des sprints agiles (planning, revue, rétrospective)."
+      ],
+      stack: ['Java Spring Boot', 'Symfony', 'Docker', 'MongoDB', 'PostgreSQL', 'Scrum'],
+      deliverables: "Code source testé, environnement Docker Compose prêt à l'emploi et backlog produit Scrum."
+    }
+  };
+
+  const modal = document.getElementById('project-modal');
+  const closeBtn = document.getElementById('close-modal-btn');
+  const modalContent = document.getElementById('modal-content');
+  const openButtons = document.querySelectorAll('.open-project-btn');
+
+  const openModal = (id: string) => {
+    const data = projectDetails[id];
+    if (!data || !modal || !modalContent) return;
+
+    modalContent.innerHTML = `
+      <div>
+        <span class="text-xs font-bold uppercase tracking-wider text-cyan-400">${data.category}</span>
+        <h3 class="text-2xl font-extrabold text-white mt-1">${data.title}</h3>
+        <p class="text-xs text-slate-400 mt-1">${data.org}</p>
+      </div>
+
+      <div class="space-y-2">
+        <h4 class="text-sm font-bold text-white uppercase tracking-wider">Contexte &amp; Objectif</h4>
+        <p class="text-sm text-slate-300 leading-relaxed">${data.overview}</p>
+      </div>
+
+      <div class="space-y-2">
+        <h4 class="text-sm font-bold text-white uppercase tracking-wider">Missions Clés</h4>
+        <ul class="space-y-1.5 text-sm text-slate-300">
+          ${data.challenges.map((c: string) => `<li class="flex items-start gap-2"><span class="text-cyan-400">•</span><span>${c}</span></li>`).join('')}
+        </ul>
+      </div>
+
+      <div class="space-y-2">
+        <h4 class="text-sm font-bold text-white uppercase tracking-wider">Technologies utilisées</h4>
+        <div class="flex flex-wrap gap-2">
+          ${data.stack.map((s: string) => `<span class="text-xs px-2.5 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-300 font-medium">${s}</span>`).join('')}
+        </div>
+      </div>
+
+      <div class="space-y-2 pt-2 border-t border-white/10">
+        <h4 class="text-sm font-bold text-white uppercase tracking-wider">Livrables</h4>
+        <p class="text-xs text-slate-400">${data.deliverables}</p>
+      </div>
+    `;
+
+    modal.classList.remove('hidden');
+    requestAnimationFrame(() => {
+      modal.classList.remove('opacity-0');
+      document.body.style.overflow = 'hidden';
+    });
+  };
+
+  const closeModal = () => {
+    if (!modal) return;
+    modal.classList.add('opacity-0');
+    setTimeout(() => {
+      modal.classList.add('hidden');
+      document.body.style.overflow = '';
+    }, 200);
+  };
+
+  openButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const id = btn.getAttribute('data-project');
+      if (id) openModal(id);
+    });
+  });
+
+  closeBtn?.addEventListener('click', closeModal);
+  modal?.addEventListener('click', (e) => {
+    if (e.target === modal) closeModal();
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && !modal?.classList.contains('hidden')) closeModal();
+  });
+</script>

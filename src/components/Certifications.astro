@@ -1,0 +1,60 @@
+---
+const certs = [
+  {
+    title: 'Databricks Fundamentals Accreditation',
+    issuer: 'Databricks Academy',
+    badge: 'Data & Lakehouse',
+    badgeColor: 'text-rose-400 bg-rose-500/10 border-rose-500/20',
+    desc: 'Compréhension approfondie du paradigme Lakehouse, du traitement de données distribué avec Apache Spark managé et de la gouvernance unifiée des données.'
+  },
+  {
+    title: 'Python (Basic) Certificate',
+    issuer: 'HackerRank',
+    badge: 'Algorithmique & Code',
+    badgeColor: 'text-emerald-400 bg-emerald-500/10 border-emerald-500/20',
+    desc: 'Validation des compétences en syntaxe Python, structures de données, manipulation de chaînes et de listes, gestion des exceptions et algorithmique.'
+  },
+  {
+    title: 'Postman API Fundamentals Student Expert',
+    issuer: 'Postman',
+    badge: 'APIs & Tests',
+    badgeColor: 'text-amber-400 bg-amber-500/10 border-amber-500/20',
+    desc: 'Maîtrise de la conception de requêtes HTTP REST, des tests automatisés de réponses d’API, des variables d’environnement et de la documentation Postman.'
+  }
+];
+---
+
+<section id="certifications" class="py-24 relative">
+  <div class="max-w-7xl mx-auto px-6">
+    
+    <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+      <span class="text-cyan-400 font-bold tracking-widest text-xs uppercase">Accréditations</span>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Certifications Officielles</h2>
+      <p class="text-slate-400 text-base sm:text-lg">
+        Des certifications reconnues démontrant un apprentissage continu et des bases techniques solides.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      {certs.map((c) => (
+        <div class="glass-card rounded-2xl p-8 flex flex-col justify-between border-white/10 hover:border-cyan-500/30">
+          <div class="space-y-4">
+            <span class={`inline-block text-xs px-3 py-1 rounded-full border font-semibold ${c.badgeColor}`}>
+              {c.badge}
+            </span>
+            <h3 class="text-lg font-bold text-white">{c.title}</h3>
+            <p class="text-xs font-semibold text-cyan-400">{c.issuer}</p>
+            <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">{c.desc}</p>
+          </div>
+          <div class="pt-6 mt-6 border-t border-white/10 flex items-center gap-2 text-xs font-semibold text-slate-300">
+            <svg class="size-4 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
+            </svg>
+            <span>Certificat validé</span>
+          </div>
+        </div>
+      ))}
+    </div>
+
+  </div>
+</section>

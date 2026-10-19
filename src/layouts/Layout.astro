@@ -1,0 +1,76 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = "Bradley Djedje | Chef de Projets IT & Développeur Full-Stack | Portfolio",
+  description = "Portfolio de Bradley Djedje - Chef de Projets Informatique & Développeur Full-Stack, alternant chez Semware et étudiant en Master MIASHS ICE-LD à l'Université de Toulouse."
+} = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{title}</title>
+  <meta name="description" content={description}>
+  <meta name="keywords" content="Bradley Djedje, Portfolio, Chef de Projets Informatique, Alternance, MIASHS, MIAGE, Développeur Full-Stack, Python, Django, Angular, Spring Boot, Toulouse">
+  <meta name="author" content="Bradley Djedje">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content={title}>
+  <meta property="og:description" content={description}>
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="relative min-h-screen text-slate-100 selection:bg-cyan-500/20 selection:text-cyan-300">
+  <!-- Glow backdrop -->
+  <div class="fixed inset-0 overflow-hidden pointer-events-none z-0" aria-hidden="true">
+    <div class="glow-orb size-125 bg-cyan-500/20 -top-25 -left-37.5"></div>
+    <div class="glow-orb size-150 bg-purple-500/20 top-2/5 -right-50"></div>
+    <div class="glow-orb size-112.5 bg-blue-500/20 -bottom-25 left-1/5"></div>
+  </div>
+
+  <div class="relative z-10 flex flex-col min-h-screen">
+    <slot />
+  </div>
+
+  <!-- Toast notification system -->
+  <div id="toast-container" class="fixed bottom-6 right-6 z-50 flex flex-col gap-2 pointer-events-none"></div>
+
+  <script>
+    // Ensure dark theme is always applied
+    const htmlRoot = document.documentElement;
+    htmlRoot.setAttribute('data-theme', 'dark');
+    try {
+      localStorage.removeItem('theme');
+    } catch (e) {}
+
+    // Global toast helper
+    window.showToast = (message: string) => {
+      const container = document.getElementById('toast-container');
+      if (!container) return;
+      const toast = document.createElement('div');
+      toast.className = 'bg-slate-900/90 text-cyan-300 border border-cyan-500/40 px-4 py-2.5 rounded-xl shadow-lg backdrop-blur-md text-sm font-medium transition-all duration-300 transform translate-y-2 opacity-0 pointer-events-auto';
+      toast.textContent = message;
+      container.appendChild(toast);
+      requestAnimationFrame(() => {
+        toast.classList.remove('translate-y-2', 'opacity-0');
+      });
+      setTimeout(() => {
+        toast.classList.add('opacity-0', 'translate-y-2');
+        setTimeout(() => toast.remove(), 300);
+      }, 3000);
+    };
+  </script>
+</body>
+</html>
