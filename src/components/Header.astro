@@ -13,7 +13,7 @@ const navLinks = [
   <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
     <!-- Brand logo -->
     <a href="#hero" class="flex items-center gap-3 group">
-      <div class="size-10 rounded-xl bg-gradient-to-tr from-cyan-500 via-blue-500 to-purple-600 flex items-center justify-center font-extrabold text-white shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform">
+      <div class="size-10 rounded-xl bg-linear-to-tr from-cyan-500 via-blue-500 to-purple-600 flex items-center justify-center font-extrabold text-white shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform">
         BD
       </div>
       <span class="font-bold text-xl tracking-tight text-white">Bradley<span class="text-cyan-400">.</span></span>
@@ -24,7 +24,7 @@ const navLinks = [
       {navLinks.map((link) => (
         <a 
           href={link.href} 
-          class="text-sm font-medium text-slate-400 hover:text-white transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-gradient-to-r after:from-cyan-400 after:to-purple-500 hover:after:w-full after:transition-all"
+          class="text-sm font-medium text-slate-400 hover:text-white transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-linear-to-r after:from-cyan-400 after:to-purple-500 hover:after:w-full after:transition-all"
         >
           {link.name}
         </a>
@@ -66,7 +66,7 @@ const navLinks = [
     ))}
     <a 
       href="#contact"
-      class="block text-center w-full py-2.5 mt-2 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-xl font-semibold text-sm"
+      class="block text-center w-full py-2.5 mt-2 bg-linear-to-r from-cyan-500 to-blue-600 text-white rounded-xl font-semibold text-sm"
       onclick="document.getElementById('mobile-menu').classList.add('hidden')"
     >
       Contacter Bradley
