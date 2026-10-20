@@ -12,7 +12,7 @@
   Site portfolio professionnel, moderne et ultra-performant, conçu avec Astro et Tailwind CSS v4.
 </p>
 
-[**🌐 Consulter la Démo en Ligne**](https://herdofpane.github.io/Portfolio/) • [**📖 Guide Utilisateur**](USER_GUIDE.md) • [**💼 Profil LinkedIn**](https://linkedin.com/in/bradley-djedje) • [**🐙 GitHub**](https://github.com/herdofpane)
+[**🌐 Consulter la Démo en Ligne**](https://herdofpane.github.io/Portfolio/) • [**📖 Guide Utilisateur**](USER_GUIDE.md) • [**🛠️ Documentation Technique**](TECHNICAL_DOCUMENTATION.md) • [**💼 Profil LinkedIn**](https://linkedin.com/in/bradley-djedje) • [**🐙 GitHub**](https://github.com/herdofpane)
 
 </div>
 
@@ -86,7 +86,8 @@ site portfolio/
 ├── package.json                 # Scripts de build et dépendances
 ├── tsconfig.json                # Configuration TypeScript
 ├── USER_GUIDE.md                # Guide utilisateur et manuel d'administration
-└── README.md                    # Documentation technique du projet
+├── TECHNICAL_DOCUMENTATION.md   # Documentation technique et architecture logicielle
+└── README.md                    # Présentation générale du projet
 ```
 
 ---
