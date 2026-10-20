@@ -12,7 +12,7 @@
   Site portfolio professionnel, moderne et ultra-performant pour <strong>Bradley Djedje</strong>, Développeur Full-Stack, en alternance chez <strong>Semware</strong> et étudiant en <strong>Master MIASHS ICE-LD</strong> (Université de Toulouse).
 </p>
 
-[**🌐 Consulter la Démo en Ligne**](https://herdofpane.github.io/Portfolio/) • [**💼 Profil LinkedIn**](https://linkedin.com/in/bradley-djedje) • [**🐙 GitHub**](https://github.com/herdofpane)
+[**🌐 Consulter la Démo en Ligne**](https://herdofpane.github.io/Portfolio/) • [**📖 Guide Utilisateur**](USER_GUIDE.md) • [**💼 Profil LinkedIn**](https://linkedin.com/in/bradley-djedje) • [**🐙 GitHub**](https://github.com/herdofpane)
 
 </div>
 
@@ -89,7 +89,8 @@ site portfolio/
 ├── astro.config.mjs             # Configuration Astro (site, base path, Tailwind v4)
 ├── package.json                 # Scripts de build et dépendances
 ├── tsconfig.json                # Configuration TypeScript
-└── README.md                    # Documentation du projet
+├── USER_GUIDE.md                # Guide utilisateur et manuel d'administration
+└── README.md                    # Documentation technique du projet
 ```
 
 ---

@@ -15,6 +15,7 @@ node_modules/
 .DS_Store
 Thumbs.db
 
-# Markdown documentation & rules (keep only README.md)
+# Markdown documentation & rules (keep README.md and USER_GUIDE.md)
 *.md
 !README.md
+!USER_GUIDE.md
